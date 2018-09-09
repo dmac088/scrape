@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "pns_lib.py", line 785, in <module>
+    x.get_all_pages(1, u'Hong Kong Island', u'Aberdeen', 1)
+  File "pns_lib.py", line 498, in get_all_pages
+    b = self.get_new_browser()
+  File "pns_lib.py", line 739, in get_new_browser
+    b = webdriver.Firefox(profile)
+  File "/usr/local/lib/python2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 157, in __init__
+    self.service.start()
+  File "/usr/local/lib/python2.7/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+

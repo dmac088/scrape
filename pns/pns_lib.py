@@ -779,12 +779,12 @@ class helper(helper_def):
 		
 helper_def.register(helper)
 x = helper('./config.ini', 'en')
-#x.get_dept_url_list()
-#x.get_location_list()
-#x.get_dept_init_page(u'Hong Kong Island', u'Aberdeen')
+x.get_dept_url_list()
+x.get_location_list()
+x.get_dept_init_page(u'Hong Kong Island', u'Aberdeen')
 x.get_all_pages(1, u'Hong Kong Island', u'Aberdeen', 1)
-#x.get_item_data( 1, u'Hong Kong Island', u'Aberdeen', 1, output_file_name='product_list_en.csv')
-#x.get_item_detail(r'D:\scrape\app\20140611\product_list_en.csv')
+x.get_item_data( 1, u'Hong Kong Island', u'Aberdeen', 1, output_file_name='product_list_en.csv')
+x.get_item_detail(r'D:\scrape\app\20140611\product_list_en.csv')
 
 #x = helper('./config.ini', 'cn')
 #x.get_dept_url_list()
