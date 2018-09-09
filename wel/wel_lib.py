@@ -237,7 +237,11 @@ class helper(helper_def):
 		b.get(self.url_index)
 		data = b.page_source
 		soup = BeautifulSoup(data)
-		page_links = soup.select(u'.menu > a')
+		
+		
+		page_links = soup.select(u'.menuItem > a')
+		
+		print page_links
 		dept_list = []
 		
 		for link in page_links:
@@ -774,11 +778,11 @@ class helper(helper_def):
 helper_def.register(helper)
 x = helper('./config.ini', 'en')
 x.get_dept_url_list()
-x.get_location_list()
-x.get_dept_init_page(u'Hong Kong Island', u'Aberdeen')
-x.get_all_pages(1, u'Hong Kong Island', u'Aberdeen', 1)
-x.get_item_data( 1, u'Hong Kong Island', u'Aberdeen', 1, output_file_name='product_list_en.csv')
-x.get_item_detail(r'./product_list_en.csv')
+#x.get_location_list()
+#x.get_dept_init_page(u'Hong Kong Island', u'Aberdeen')
+#x.get_all_pages(1, u'Hong Kong Island', u'Aberdeen', 1)
+#x.get_item_data( 1, u'Hong Kong Island', u'Aberdeen', 1, output_file_name='product_list_en.csv')
+#x.get_item_detail(r'./product_list_en.csv')
 
 #x = helper('./config.ini', 'cn')
 #x.get_dept_url_list()
