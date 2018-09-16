@@ -111,6 +111,7 @@ class helper(helper_def):
 			print u'creating: ' + fnm_status
 			self.create_new_file(os.path.join(self.dir_base, fnm_status))
 		
+		
 	
 	def load_config(self, file):
 		return super(helper, self).load_config(file)
@@ -248,6 +249,7 @@ class helper(helper_def):
 			return 0				
 										
 	def get_dept_url_list(self):
+		print 'running: get_dept_url_list'
 		link_file_path = os.path.join(self.dir_base, self.dept_url_file)
 		link_file = self.create_new_file(link_file_path)
 		
@@ -257,6 +259,7 @@ class helper(helper_def):
 		soup = BeautifulSoup(data)
 		page_links = soup.select(u'.menu > a')
 		dept_list = []
+		
 		
 		for link in page_links:
 			dept_link = link.get(u'href')
@@ -779,12 +782,12 @@ class helper(helper_def):
 		
 helper_def.register(helper)
 x = helper('./config.ini', 'en')
-x.get_dept_url_list()
-x.get_location_list()
-x.get_dept_init_page(u'Hong Kong Island', u'Aberdeen')
-x.get_all_pages(1, u'Hong Kong Island', u'Aberdeen', 1)
-x.get_item_data( 1, u'Hong Kong Island', u'Aberdeen', 1, output_file_name='product_list_en.csv')
-x.get_item_detail(r'D:\scrape\app\20140611\product_list_en.csv')
+#x.get_dept_url_list()
+#x.get_location_list()
+#x.get_dept_init_page(u'Hong Kong Island', u'Aberdeen')
+#x.get_all_pages(1, u'Hong Kong Island', u'Aberdeen', 1)
+#x.get_item_data( 1, u'Hong Kong Island', u'Aberdeen', 1, output_file_name='product_list_en.csv')
+#x.get_item_detail(r'D:\scrape\app\20140611\product_list_en.csv')
 
 #x = helper('./config.ini', 'cn')
 #x.get_dept_url_list()

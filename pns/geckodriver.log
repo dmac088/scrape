@@ -2090,3 +2090,26 @@ JavaScript warning: https://www.centos.org/assets/js/jquery.cycle2.min.js, line 
 1536463564600	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
 1536463564612	addons.manager	DEBUG	Async provider shutdown done
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1536469387685	geckodriver	INFO	geckodriver 0.21.0
+1536469387692	geckodriver	INFO	Listening on 127.0.0.1:59149
+1536469388770	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.b1sUKnaxfXgf"
+
+(firefox:2825): Gtk-WARNING **: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Error: no DISPLAY environment variable specified
+1536494856220	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
+1536494856224	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 30.1.0
+1536494856249	addons.xpi	DEBUG	Calling bootstrap method shutdown on onboarding@mozilla.org version 1.0
+1536494856250	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1536494856250	addons.xpi	DEBUG	Calling bootstrap method shutdown on followonsearch@mozilla.com version 0.9.6
+1536494856251	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1536494856251	addons.xpi	DEBUG	Calling bootstrap method shutdown on activity-stream@mozilla.org version 2018.04.20.1103-b3b95672
+1536494856442	addons.manager	DEBUG	shutdown
+1536494856443	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1536494856443	addons.xpi	DEBUG	shutdown
+1536494856443	addons.xpi-utils	DEBUG	shutdown
+1536494856443	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1536494856444	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1536494856444	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1536494856444	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1536494856454	addons.manager	DEBUG	Async provider shutdown done

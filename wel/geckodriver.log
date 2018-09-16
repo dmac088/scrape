@@ -2069,3 +2069,7 @@ JavaScript warning: https://www.centos.org/assets/js/jquery.cycle2.min.js, line 
 1536462543435	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
 1536462543435	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
 1536462543442	addons.manager	DEBUG	Async provider shutdown done
+1536497944139	geckodriver	INFO	geckodriver 0.21.0
+1536497944145	geckodriver	INFO	Listening on 127.0.0.1:38979
+1536498008213	geckodriver	INFO	geckodriver 0.21.0
+1536498008218	geckodriver	INFO	Listening on 127.0.0.1:44208
